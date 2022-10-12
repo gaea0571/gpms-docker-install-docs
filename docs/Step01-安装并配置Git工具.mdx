@@ -1,0 +1,27 @@
+
+## 安装git命令行
+
+[下载地址>https://git-scm.com/download/win](https://git-scm.com/download/win)
+
+这里选择64位的进行下载安装就可以了
+![git64install](@site/static/git64install.png)
+
+安装的时候默认全部"下一步"即可
+
+![git_install_script](@site/static/git_install_script.jpg)
+
+## 全局添加gitlab账号
+
+```bash
+git config --global user.name "<你的gitlab用户名>";
+git config --global user.email "<你的gitlab登陆邮箱>";
+git config --global credential.helper store;
+```
+
+## 从 gitlab 拉取 gpms_docker 项目
+
+在空白目录下打开window的cmd命令行界面输入以下命令
+
+```bash
+git clone http://hz.dyn.gaea.cn:5080/yusc/gpms-docker.git
+```
