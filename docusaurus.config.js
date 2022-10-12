@@ -8,8 +8,8 @@ module.exports = {
   tagline: "基于docker-compose的项目部署流程",
   onBrokenLinks: "ignore",
   onBrokenMarkdownLinks: "warn",
-  baseUrl: "/",
-  url: "https://your-docusaurus-test-site.com",
+  baseUrl: "/gpms-docker-install-docs/",
+  url: "/",
   favicon: "img/favicon.ico",
   organizationName: "facebook", // Usually your GitHub org/user name.
   projectName: "docusaurus", // Usually your repo name.

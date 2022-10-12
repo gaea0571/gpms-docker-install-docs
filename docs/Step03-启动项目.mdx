@@ -1,0 +1,21 @@
+
+
+## 启动项目
+
+- 在gpms_docker项目的目录下启动PowerShell或者CMD命令行
+- 输入`docker-compose up -d`命令
+- 等待所有容器全部启动(done)完成
+
+![docker_compose_up](@site/static/docker_compose_up.png)
+
+## 验证Mysql
+
+启动完项目之后使用 `docker logs gpms_mysql_server -f` 命令查看mysql的运行状态
+直到看到 `[System] [MY-010931] [Server] /usr/sbin/mysqld: ready for connections. Version: '8.0.30'  socket: '/var/run/mysqld/mysqld.sock'  port: 3306  MySQL Community Server - GPL.` 
+这一行日志输出的时候就代表mysql已经初始化完成
+![mysql_server](@site/static/mysql_server.png)
+
+## 访问项目
+
+在浏览器中输入`http://localhost:8050/`验证项目是否可以正常访问
+![view_project](@site/static/view_project.png)
